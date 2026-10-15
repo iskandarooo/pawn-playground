@@ -1,6 +1,12 @@
-Thanks for downloading this template!
+# Pawn Playground
 
-Template Name: DevFolio
-Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
-Author: BootstrapMade.com
-License: https://bootstrapmade.com/license/
+The official website for Pawn Playground Chess Academy, showcasing our coaching programs, academy services, and tournament offerings.
+
+**Live Website:** [pawn-playground.github.io](https://iskandarooo.github.io/pawn-playground)
+
+---
+
+## Tech Stack
+
+* **Frontend:** HTML5, CSS3, JavaScript
+* **Hosting:** GitHub Pages
