@@ -3,614 +3,1082 @@
 
 <head>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>Pawn Playground</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pawn Playground | Chess Academy Shah Alam — MSSD & Competitive Chess Coaching</title>
+  <meta name="description"
+    content="Pawn Playground Chess Academy in Shah Alam, Selangor. Professional chess coaching for kids, MSSD school tournament contenders, and adult learners. Private & small-group classes online and in-person.">
+  <meta name="keywords"
+    content="chess coaching Shah Alam, MSSD chess Selangor, chess academy Malaysia, learn chess kids, private chess tutor Malaysia, Pawn Playground">
 
   <!-- Favicons -->
-  <link href="assets/img/pawnicon.png" rel="icon">
+  <link href="assets/img/pawnicon.png" rel="icon" type="image/png">
   <link href="assets/img/pawnicon.png" rel="apple-touch-icon">
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-
-  <style>
-    #more {display: none;}
-  </style>
-
-  <!-- =======================================================
-  * Template Name: DevFolio - v4.10.0
-  * Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <!-- Editorial Tournament Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top">
-    <div class="container d-flex align-items-center justify-content-between">
+  <!-- ==========================================================================
+       1. STICKY EDITORIAL NAVBAR
+       ========================================================================== -->
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="brand-logo" aria-label="Pawn Playground Home">
+        <span class="logo-icon">
+          <img src="assets/img/pawn-icon-tight.png" alt="Pawn Playground Icon" width="36" height="36">
+        </span>
+        <span class="brand-wordmark">
+          <span class="brand-pawn">PAWN</span>
+          <span class="brand-playground">PLAYGROUND.</span>
+        </span>
+      </a>
 
-      <h1 class="logo"><a href="index.html">Pawn Playground</a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About &amp; Coaches</a>
+        <a href="#philosophy" class="nav-link">Methodology</a>
+        <a href="#programs" class="nav-link">Programs</a>
+        <a href="#quiz" class="nav-link">Program Quiz</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
 
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#service">Service</a></li>
-          <li><a class="nav-link scrollto " href="#course">Course</a></li>
-          <li><a class="nav-link scrollto " href="#blog">Blog</a></li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
+      <div class="nav-actions">
+        <a href="https://wa.me/60196120403?text=Hi%20Coach%20Iskandar%2C%20I%20would%20like%20to%20book%20a%20trial%20session%20for%20my%20child."
+          class="btn btn-whatsapp nav-cta-btn" target="_blank" rel="noopener noreferrer"
+          aria-label="Book Trial via WhatsApp">
+          <svg class="wa-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path
+              d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+          </svg>
+          <span class="btn-text-full">Book Trial via WhatsApp</span>
+          <span class="btn-text-mobile">Trial</span>
+        </a>
 
-    </div>
-  </header><!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
-  <div id="hero" class="hero route bg-image" style="background-image: url(assets/img/hero-bg.jpg)">
-    <div class="overlay-itro"></div>
-    <div class="hero-content display-table">
-      <div class="table-cell">
-        <div class="container">
-          <!--<p class="display-6 color-d">Hello, world!</p>-->
-          <h1 class="hero-title mb-4">#PawnToPlay</h1>
-          <p class="hero-subtitle"><span class="typed" data-typed-items="Entertain., Inspire., Educate."></span></p>
-          <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
-        </div>
+        <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle navigation menu"
+          aria-expanded="false">
+          <span class="hamburger-icon" aria-hidden="true">&#9776;</span>
+        </button>
       </div>
     </div>
-  </div><!-- End Hero Section -->
+  </header>
 
   <main id="main">
 
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about-mf sect-pt4 route">
+    <!-- ==========================================================================
+         2. ASYMMETRIC HERO SECTION
+         ========================================================================== -->
+    <section id="hero" class="hero-section">
       <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="box-shadow-full">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="row">
-                    <div class="col-sm-6 col-md-5">
-                      <div class="about-img" style="text-align: center;">
-                        <img src="assets/img/V2 Logo (2).png" class="img-fluid rounded b-shadow-a" alt="">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-6 col-md-7">
-                    <div class="about-info">
-                      <p><span class="title-s">Academy Name: </span> <span>Pawn Playground</span></p>
-                      <p><span class="title-s">Instagram: </span> <span><a href=https://www.instagram.com/pawnplayground>@pawnplayground</a></span></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="about-me pt-4 pt-md-0">
-                    <div class="title-box-2">
-                      <h5 class="title-left">
-                        About Us
-                      </h5>
-                    </div>
+        <div class="hero-grid">
 
+          <!-- Left Column: Editorial Headline & Conversion Direct Action -->
+          <div class="hero-content">
+            <span class="eyebrow">Shah Alam, Selangor &bull; MSSD &amp; Youth Chess Academy</span>
 
-                    <p class="lead">
-                      Welcome to Pawn Playground, the premier destination for young pawns aged 7-12 to start playing chess. 
-                      My name is Iskandar Hakimi, and I am the founder and head coach of Pawn Playground. 
-                      
-                      <br><br> I have been passionate about chess since I was a young child, and I have always believed that it is a game that has the 
-                      power to bring people together and help them develop valuable skills such as critical thinking, decision making, and strategic planning.
-                      Over the years, <span id="dots">...</span><span id="more"> I have played in countless tournaments, studied with some amazing coaches, and honed my skills to become a solid player of the game.
-                      
-                      <br><br> I started Pawn Playground with the goal of sharing my love of chess with others and helping them to achieve their full 
-                      potential in the game. Whether you're a beginner who has never played before or an intermediate player looking to take your skills 
-                      to the next level, my team and I are here to help you succeed.
-                    
-                      <br><br>At Pawn Playground, we offer a variety of programs and classes, ranging from individual lessons to group training sessions, 
-                      to help you reach your goals and improve your game. Our experienced coaches are dedicated to providing personalized instruction 
-                      and support, and we are committed to creating a welcoming and supportive community for all of our students.
-                    
-                      <br><br> Thank you for considering Pawn Playground for your chess education, and we look forward to working with you soon.</span>
-                    </p>
-                    <button onclick="myFunction()" id="myBtn">Read more</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section><!-- End About Section -->
+            <h1 class="text-h1">
+              Strategic Chess Coaching for Young Minds &amp; Competitive Players
+            </h1>
 
-    <!-- ======= Service Section ======= -->
-    <section id="service" class="services-mf pt-5 route">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="title-box text-center">
-              <h3 class="title-a">
-                Service
-              </h3>
-              <p class="subtitle-a">
-                "Without the element of enjoyment, it is not worth trying to excel at anything." - Magnus Carlsen
-              </p>
-              <div class="line-mf"></div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-card-checklist"></i></span>
-              </div>
-              <div class="service-content">
-                <h2 class="s-title">Chess Lessons</h2>
-                <p class="s-description text-center">
-                  We offer expert-led chess classes that teach both beginners and intermediate players the fundamentals of the game, 
-                  from basic rules and strategies to advanced techniques, using interactive lessons and practice games.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-bar-chart"></i></span>
-              </div>
-              <div class="service-content">
-                <h2 class="s-title">Game Analysis</h2>
-                <p class="s-description text-center">
-                  We provide our students with in-depth feedback and personalized advice to improve their game, 
-                  allowing them to identify weaknesses, fine-tune their strategies, and ultimately play with greater confidence and success.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-people"></i></span>
-              </div>
-              <div class="service-content">
-                <h2 class="s-title">Knowledge Sharing</h2>
-                <p class="s-description text-center">
-                  We foster a culture of knowledge sharing in chess by encouraging both our experienced chess players and dedicated 
-                  chess parents to share their insights and tips with our students, providing them with valuable resources 
-                  to help them develop their skills.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section><!-- End Services Section -->
+            <p class="lead">
+              From foundational piece mastery to MSSD championship podium contention.
+              Personalized private and small-group chess coaching led by Coach Iskandar Hakimi,
+              instilling critical calculation, foresight, and emotional resilience in every move.
+            </p>
 
-    <!-- ======= Counter Section ======= -->
-    <div class="section-counter paralax-mf bg-image" style="background-image: url(assets/img/pawn-bg.jpg)">
-      <div class="overlay-mf"></div>
-      <div class="container position-relative">
-        <div class="row">
-          <div class="col-sm-3 col-lg-3">
-            <div class="counter-box counter-box pt-4 pt-md-0">
-              <div class="counter-ico">
-                <span class="ico-circle"><i class="bi bi-check"></i></span>
-              </div>
-              <div class="counter-num">
-                <p data-purecounter-start="0" data-purecounter-end="72" data-purecounter-duration="1" class="counter purecounter"></p>
-                <span class="counter-text">CLASSES COMPLETED<br><br></span>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-3 col-lg-3">
-            <div class="counter-box pt-4 pt-md-0">
-              <div class="counter-ico">
-                <span class="ico-circle"><i class="bi bi-journal-richtext"></i></span>
-              </div>
-              <div class="counter-num">
-                <p data-purecounter-start="0" data-purecounter-end="2" data-purecounter-duration="1" class="counter purecounter"></p>
-                <span class="counter-text">TOTAL TRAINERS<br><br></span>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-3 col-lg-3">
-            <div class="counter-box pt-4 pt-md-0">
-              <div class="counter-ico">
-                <span class="ico-circle"><i class="bi bi-people"></i></span>
-              </div>
-              <div class="counter-num">
-                <p data-purecounter-start="0" data-purecounter-end="12" data-purecounter-duration="1" class="counter purecounter"></p>
-                <span class="counter-text">TOTAL STUDENTS<br><br></span>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-3 col-lg-3">
-            <div class="counter-box pt-4 pt-md-0">
-              <div class="counter-ico">
-                <span class="ico-circle"><i class="bi bi-award"></i></span>
-              </div>
-              <div class="counter-num">
-                <p data-purecounter-start="0" data-purecounter-end="27" data-purecounter-duration="1" class="counter purecounter"></p>
-                <span class="counter-text">STUDENTS' ACHIEVEMENT</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div><!-- End Counter Section -->
-
-    <!-- ======= Course Section ======= -->
-    <section id="course" class="portfolio-mf sect-pt4 route">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="title-box text-center">
-              <h3 class="title-a">
-                Course
-              </h3>
-              <p class="subtitle-a">
-                "When you see a good move, look for a better one." - Emanuel Lasker
-              </p>
-              <div class="line-mf"></div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/pawn-sketch-bw.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/pawn-sketch-bw.jpg" alt="" class="img-fluid">
-                </div>
+            <div class="hero-actions">
+              <a href="https://wa.me/60196120403?text=Hi%20Coach%20Iskandar%2C%20I%20am%20interested%20in%20chess%20coaching%20at%20Pawn%20Playground%20and%20would%20like%20to%20inquire%20about%20a%20trial."
+                class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener noreferrer">
+                <svg class="wa-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path
+                    d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+                </svg>
+                <span>Inquire on WhatsApp (019-612 0403)</span>
               </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Beginner's Chess</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Pawn Playground</span> / <span class="w-date">1</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/knight-sketch-bw.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/knight-sketch-bw.jpg" alt="" class="img-fluid">
-                </div>
+
+              <a href="#quiz" class="btn btn-outline btn-lg">
+                <span>Find Your Program &darr;</span>
               </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Intermediate Chess Strategy</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Pawn Playground</span> / <span class="w-date">2</span>
-                    </div>
-                  </div>
-                </div>
+            </div>
+
+            <div class="hero-trust-pills">
+              <div class="trust-pill">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+                <span>Private (1–2) &amp; Small Cohorts (Max 5)</span>
+              </div>
+              <div class="trust-pill">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span>Shah Alam Training Centre &amp; Online</span>
+              </div>
+              <div class="trust-pill">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path>
+                  <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path>
+                  <path d="M4 22h16"></path>
+                  <path d="M10 14.66V17c0 .55-.45 1-1 1H7v4h10v-4h-2c-.55 0-1-.45-1-1v-2.34"></path>
+                  <path d="M18 4H6v7a6 6 0 0 0 12 0V4z"></path>
+                </svg>
+                <span>MSSD, MSSS &amp; School Club Syllabus</span>
               </div>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/rook-sketch-bw.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/rook-sketch-bw.jpg" alt="" class="img-fluid">
+
+          <!-- Right Column: Interactive Mate-in-1 Tactical Puzzle -->
+          <div class="hero-visual">
+            <div class="tactical-board-card" id="tacticalPuzzleCard">
+              <div class="board-header">
+                <div class="board-title">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="5" r="3"></circle>
+                    <path d="M9 10h6"></path>
+                    <path d="M10 10c0 4-3 7-3 10h10c0-3-3-6-3-10"></path>
+                    <path d="M6 21h12"></path>
+                  </svg>
+                  <span id="puzzleTitle">Puzzle 1: Back-Rank Mate</span>
                 </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Advanced Chess Tactics</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Pawn Playground</span> / <span class="w-date">3</span>
-                    </div>
-                  </div>
+                <div class="flex items-center gap-xs">
+                  <span class="badge badge-gold" id="puzzleStatusBadge">White to Move &bull; Mate in 1</span>
+                  <button type="button" class="puzzle-reset-btn" id="puzzleResetBtn" title="Reset Puzzle">Reset</button>
                 </div>
+              </div>
+
+              <!-- 8x8 Interactive Board Rendered by main.js -->
+              <div class="chess-board-grid" id="interactiveChessBoard" aria-label="Interactive Mate in 1 Chess Puzzle">
+              </div>
+
+              <div class="board-footer" id="puzzleFooter">
+                <span id="puzzleHintText">Tap a White piece, then tap its winning square.</span>
+                <button type="button" class="puzzle-next-btn" id="puzzleNextBtn">Next Puzzle &rarr;</button>
               </div>
             </div>
           </div>
+
         </div>
       </div>
-    </section><!-- End Portfolio Section -->
+    </section>
 
-    <!-- ======= Trainers Section ======= -->
-    <div class="testimonials paralax-mf bg-image" style="background-image: url(assets/img/chess-bg.jpg)">
-      <div class="overlay-mf"></div>
+    <!-- ==========================================================================
+         3. CREDIBILITY & TRACK RECORD STRIP
+         ========================================================================== -->
+    <section class="stats-banner" aria-label="Academy Milestones & Track Record">
       <div class="container">
-        <div class="row">
-          <div class="col-md-12">
+        <div class="grid-4">
 
-            <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-              <div class="swiper-wrapper">
-
-                <div class="swiper-slide">
-                  <div class="testimonial-box">
-                    <div class="author-test">
-                      <img src="assets/img/kimipic.jpg" alt="" class="rounded-circle b-shadow-a">
-                      <span class="author">Iskandar Hakimi</span>
-                    </div>
-                    <div class="content-test">
-                      <p class="description lead">
-                        My goal in 2023 is to "play and teach chess more regularly," which I was struggling to do. 
-                        The idea of Pawn Playground came along at just the right time! 
-                      </p>
-                    </div>
-                  </div>
-                </div><!-- End trainers item -->
-
-                <div class="swiper-slide">
-                  <div class="testimonial-box">
-                    <div class="author-test">
-                      <img src="assets/img/dinapic.jpg" alt="" class="rounded-circle b-shadow-a">
-                      <span class="author">Yasmin Irdina</span>
-                    </div>
-                    <div class="content-test">
-                      <p class="description lead">
-                        I strongly believe that teaching our young guns how to play chess will stimulate 
-                        their development in problem-solving, critical thinking, and strategic planning skills. Let's #PawnToPlay.
-                      </p>
-                    </div>
-                  </div>
-                </div><!-- End trainers item -->
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
-
-            <!-- <div id="testimonial-mf" class="owl-carousel owl-theme">
-          
-        </div> -->
+          <div class="stat-item">
+            <div class="stat-number">72+</div>
+            <div class="stat-label">Classes Completed</div>
           </div>
+
+          <div class="stat-item">
+            <div class="stat-number">2</div>
+            <div class="stat-label">Dedicated Experienced Trainers</div>
+          </div>
+
+          <div class="stat-item">
+            <div class="stat-number">12+</div>
+            <div class="stat-label">Active Developing Students</div>
+          </div>
+
+          <div class="stat-item">
+            <div class="stat-number">27+</div>
+            <div class="stat-label">Student Tournament &amp; MSSD Achievements</div>
+          </div>
+
         </div>
       </div>
-    </div><!-- End Trainers Section -->
+    </section>
 
-    <!-- ======= Blog Section ======= -->
-    <section id="blog" class="blog-mf sect-pt4 route">
+    <!-- ==========================================================================
+         4. ABOUT & COACHING PHILOSOPHY SECTION
+         ========================================================================== -->
+    <section id="about" class="section">
       <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="title-box text-center">
-              <h3 class="title-a">
-                Blog
-              </h3>
-              <p class="subtitle-a">
-                "I like the moment when I break a man's ego." - Bobby Fischer
+
+        <div class="section-header text-center">
+          <span class="eyebrow">About Pawn Playground</span>
+          <h2 class="section-title">Nurturing Young Pawns into Resilient Thinkers</h2>
+          <p class="section-subtitle">
+            Founded in Shah Alam to provide structured, supportive chess mentorship where every child learns to
+            calculate deeply and play with joy.
+          </p>
+        </div>
+
+        <!-- Coach Story & Philosophy Grid -->
+        <div class="grid-2 items-center" style="margin-bottom: var(--space-3xl);">
+
+          <div class="card card-stone">
+            <span class="eyebrow">Founder's Journey</span>
+            <h3 style="margin-bottom: var(--space-md); font-size: 1.65rem;">
+              "Chess teaches young minds that every choice has a consequence."
+            </h3>
+
+            <p class="lead" style="margin-bottom: var(--space-md);">
+              Welcome to Pawn Playground, the premier destination for young pawns to start and elevate their chess
+              journey.
+              My name is <strong>Iskandar Hakimi</strong>, and I am the founder and head coach of Pawn Playground.
+            </p>
+
+            <p style="margin-bottom: var(--space-md);">
+              I have been deeply passionate about chess since I was a young child. I have always believed that it is a
+              game
+              with the rare power to bring people together while developing irreplaceable cognitive skills:
+              <strong>critical thinking, disciplined decision-making, and long-term strategic foresight</strong>.
+            </p>
+
+            <p>
+              Over the years, I have competed in numerous competitive tournaments, studied with esteemed coaches,
+              and developed a modern, encouraging coaching syllabus. Whether your child has never touched a piece
+              or is preparing for MSSD district selection, our team is here to guide them step-by-step.
+            </p>
+          </div>
+
+          <!-- Academy Identity & Magnus Quote -->
+          <div class="flex flex-col gap-lg">
+
+            <div class="card" style="border-left: 4px solid var(--brand-accent);">
+              <span class="badge badge-gold" style="margin-bottom: var(--space-xs);">Guiding Academy Principle</span>
+              <blockquote
+                style="font-family: var(--font-heading); font-size: 1.25rem; font-style: italic; color: var(--brand-primary); margin-bottom: var(--space-xs); line-height: 1.4;">
+                "Without the element of enjoyment, it is not worth trying to excel at anything."
+              </blockquote>
+              <cite
+                style="display: block; font-size: 0.88rem; color: var(--text-muted); font-style: normal; font-weight: 600;">
+                &mdash; Magnus Carlsen, 5-Time World Chess Champion
+              </cite>
+            </div>
+
+            <div class="card">
+              <h4 style="margin-bottom: var(--space-xs); font-size: 1.15rem;">Class Setup &amp; Flexibility</h4>
+              <p style="font-size: 0.95rem; margin-bottom: var(--space-sm);">
+                We prioritize small learning cohorts to guarantee personalized attention for every student:
               </p>
-              <div class="line-mf"></div>
+              <ul class="feature-list" style="margin: 0;">
+                <li class="feature-item">
+                  <span class="check-icon">&#10003;</span>
+                  <span><strong>Private Coaching:</strong> 1-on-1 or 2 students maximum for accelerated progress</span>
+                </li>
+                <li class="feature-item">
+                  <span class="check-icon">&#10003;</span>
+                  <span><strong>Group Training:</strong> Capped at 5 students to ensure interactive peer games</span>
+                </li>
+                <li class="feature-item">
+                  <span class="check-icon">&#10003;</span>
+                  <span><strong>Makeup Flexibility:</strong> Replaceable class sessions if a student cannot
+                    attend</span>
+                </li>
+              </ul>
             </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card card-blog">
-              <div class="card-img">
-                <a href="https://www.chess.com/blog/chesscom"><img src="assets/img/chess.com.jpeg" alt="" class="img-fluid"></a>
-              </div>
-              <div class="card-body">
-                <div class="card-category-box">
-                  <div class="card-category">
-                    <h6 class="category">Online Platform</h6>
-                  </div>
-                </div>
-                <h3 class="card-title"><a href="https://www.chess.com/blog/chesscom">#1 Most Popular Chess Blog</a></h3>
-                <p class="card-description">
-                  Read the top chess blogs by grandmasters, proffesional players, and 
-                  chess enthusiasts from around the world.
-                </p>
-              </div>
-              <div class="card-footer">
-                <div class="post-author">
-                  <a href="#">
-                    <img src="assets/img/chess.comicon.png" alt="" class="avatar rounded-circle">
-                    <span class="author">Chess.com</span>
-                  </a>
-                </div>
-                <div class="post-date">
-                  <span class="bi bi-clock"></span> 10 min
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card card-blog">
-              <div class="card-img">
-                <a href="https://www.fide.com/news"><img src="assets/img/fide.jpg" alt="" class="img-fluid"></a>
-              </div>
-              <div class="card-body">
-                <div class="card-category-box">
-                  <div class="card-category">
-                    <h6 class="category">International</h6>
-                  </div>
-                </div>
-                <h3 class="card-title"><a href="https://www.fide.com/news">World Chess news digest by fide.com!</a></h3>
-                <p class="card-description">
-                  Read quality Chess blog articles written by Chess Officials, proffesionals 
-                  and rated coaches. Know everything about FIDE Chess competitions.
-                </p>
-              </div>
-              <div class="card-footer">
-                <div class="post-author">
-                  <a href="#">
-                    <img src="assets/img/fidelogo.png" alt="" class="avatar rounded-circle">
-                    <span class="author">International Chess Federation</span>
-                  </a>
-                </div>
-                <div class="post-date">
-                  <span class="bi bi-clock"></span> 10 min
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card card-blog">
-              <div class="card-img">
-                <a href="https://malaysiachess.org/"><img src="assets/img/mcf.jpg" alt="" class="img-fluid"></a>
-              </div>
-              <div class="card-body">
-                <div class="card-category-box">
-                  <div class="card-category">
-                    <h6 class="category">Local</h6>
-                  </div>
-                </div>
-                <h3 class="card-title"><a href="https://malaysiachess.org/">Malaysia Chess news, and coverage.</a></h3>
-                <p class="card-description">
-                  Everything Chess. Tips, games, news, online, blog, commentary and humour.
-                  This blog is dedicated to Malaysian Chess.
-                </p>
-              </div>
-              <div class="card-footer">
-                <div class="post-author">
-                  <a href="#">
-                    <img src="assets/img/mcflogo.png" alt="" class="avatar rounded-circle">
-                    <span class="author">Malaysian Chess Federation (MCF)</span>
-                  </a>
-                </div>
-                <div class="post-date">
-                  <span class="bi bi-clock"></span> 10 min
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section><!-- End Blog Section -->
 
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(assets/img/overlay-bg.jpg)">
-      <div class="overlay-mf"></div>
+          </div>
+
+        </div>
+
+        <!-- Meet the Coaches Grid -->
+        <div id="coaches" class="section-header text-center" style="margin-bottom: var(--space-xl);">
+          <span class="eyebrow">Dedicated Trainers</span>
+          <h3 class="section-title">Coaches Behind #PawnToPlay</h3>
+        </div>
+
+        <div class="coach-grid">
+
+          <!-- Coach Iskandar Hakimi -->
+          <div class="coach-card">
+            <div class="coach-header">
+              <img src="assets/img/kimipic.jpg" alt="Coach Iskandar Hakimi" class="coach-avatar" width="72" height="72">
+              <div class="coach-meta">
+                <h4>Iskandar Hakimi</h4>
+                <span class="coach-role">Founder &amp; Head Coach</span>
+              </div>
+            </div>
+            <p>
+              "My mission with Pawn Playground is to make quality chess education welcoming, rigorous, and inspiring.
+              We teach kids not just how to win games, but how to think calmly under tournament pressure and learn
+              gracefully from every defeat."
+            </p>
+            <div class="flex items-center gap-xs">
+              <span class="badge badge-green">Tournament Active</span>
+              <span class="badge badge-location">Shah Alam / Online</span>
+            </div>
+          </div>
+
+          <!-- Coach Yasmin Irdina -->
+          <div class="coach-card">
+            <div class="coach-header">
+              <img src="assets/img/dinapic.jpg" alt="Coach Yasmin Irdina" class="coach-avatar" width="72" height="72">
+              <div class="coach-meta">
+                <h4>Yasmin Irdina</h4>
+                <span class="coach-role">Academy Trainer</span>
+              </div>
+            </div>
+            <p>
+              "I strongly believe that teaching our young guns how to play chess will stimulate their development in
+              problem-solving, critical thinking, and strategic planning skills. Let's #PawnToPlay."
+            </p>
+            <div class="flex items-center gap-xs">
+              <span class="badge badge-gold">Youth Specialist</span>
+              <span class="badge badge-location">Shah Alam / Online</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         4B. METHODOLOGY & SERVICE PILLARS
+         ========================================================================== -->
+    <section id="philosophy" class="section section-stone">
       <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="contact-mf">
-              <div id="contact" class="box-shadow-full">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="title-box-2">
-                      <h5 class="title-left">
-                        About Class
-                      </h5>
-                    </div>
-                    <div>
-                      <p class="lead">
-                        <p><b>Age:</b> 7yrs old and above</p>
-                        <p><b>Max Students:</b> 2 (Private) / 5 (Group)</p>
-                        <p><b>Hourly Rate:</b> RM25 (Private) / RM20 (Group) </p>
-                        <p><b>Duration:</b> 2 Hours</p>
-                        <p><b>Per Month (4 Sessions):</b> RM180 (Private) / RM150 (Group)</p>
-                        <p><b>Timeslot:</b> Any agreed timeslot</p>
-                        <p><b>Venue:</b> Pawn Playground Training Centre (Shah Alam) / Google Meet</p>
-                        <br>
-                        <p><b>*Note:</b> Class is replaceable if student cannot make it.</p>
-                      </p>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="title-box-2 pt-4 pt-md-0">
-                      <h5 class="title-left">
-                        Get in Touch
-                      </h5>
-                    </div>
-                    <div class="more-info">
-                      <p class="lead">
-                        If you're interested in learning more about chess or want to develop your skills further, 
-                        Pawn Playground is here to help. To schedule a consultation or for more information, 
-                        please don't hesitate to contact us at Pawn Playground via phone or email. 
-                        We look forward to hearing from you soon.
-                      </p>
-                      <ul class="list-ico">
-                        <li><span class="bi bi-geo-alt"></span> SHAH ALAM, SELANGOR</li>
-                        <li><span class="bi bi-phone"></span> (+60) 19-612 0403</li>
-                        <li><span class="bi bi-envelope"></span> iskandarhkimi43@gmail.com</li>
-                      </ul>
-                    </div>
-                    <div class="socials">
-                      <ul>
-                        <li><a href="https://api.whatsapp.com/send?phone=60196120403&text=Hello%2C%20I%20am%20interested%20in%20joining%20Pawn%20Playground!"><span class="ico-circle"><i class="bi bi-whatsapp"></i></span></a></li>
-                        <li><a href="https://www.instagram.com/pawnplayground/"><span class="ico-circle"><i class="bi bi-instagram"></i></span></a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
+
+        <div class="section-header text-center">
+          <span class="eyebrow">Our Training Pillars</span>
+          <h2 class="section-title">How We Train Champions</h2>
+          <p class="section-subtitle">
+            A three-pronged coaching methodology engineered to cultivate practical tournament strength.
+          </p>
+        </div>
+
+        <div class="grid-3">
+
+          <div class="card">
+            <span class="eyebrow">Pillar 1</span>
+            <h3 style="font-size: 1.35rem; margin-bottom: var(--space-xs);">Structured Chess Lessons</h3>
+            <p>
+              Expert-led instruction guiding students from basic piece dynamics and fundamental checkmate patterns
+              up to sophisticated opening repertoires and endgame conversions through interactive master studies.
+            </p>
+          </div>
+
+          <div class="card">
+            <span class="eyebrow">Pillar 2</span>
+            <h3 style="font-size: 1.35rem; margin-bottom: var(--space-xs);">Post-Mortem Game Analysis</h3>
+            <p>
+              We provide each student with personalized feedback on their live tournament and practice games,
+              pinpointing critical tactical oversights and replacing guesswork with structured calculation.
+            </p>
+          </div>
+
+          <div class="card">
+            <span class="eyebrow">Pillar 3</span>
+            <h3 style="font-size: 1.35rem; margin-bottom: var(--space-xs);">Knowledge Sharing &amp; Community</h3>
+            <p>
+              We cultivate a supportive ecosystem connecting coaches, enthusiastic young peers, and dedicated chess
+              parents,
+              sharing curated resources, tournament announcements, and continuous encouragement.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         5. PROGRAMS / COURSE TIERS (NO PRICES DISPLAYED)
+         ========================================================================== -->
+    <section id="programs" class="section">
+      <div class="container">
+
+        <div class="section-header text-center">
+          <span class="eyebrow">Structured Curriculum</span>
+          <h2 class="section-title">Coaching Programs &amp; Pathways</h2>
+          <p class="section-subtitle">
+            Three progressive developmental stages designed for students in Shah Alam and online.
+            Select a program below to inquire directly with our coaching team.
+          </p>
+        </div>
+
+        <div class="grid-3">
+
+          <!-- Program 1: Beginner Foundation -->
+          <div class="program-card">
+            <div class="program-card-header">
+              <span class="badge badge-green">Stage 1</span>
+              <h3 class="program-title">Beginner Foundation</h3>
+              <p class="program-target"><strong>Target Level:</strong> Ages 5–12 &bull; New to chess or basic moves</p>
+            </div>
+
+            <ul class="feature-list">
+              <li class="feature-item">
+                <span class="check-icon">&#10003;</span>
+                <span>Master legal piece movements, board coordinates, special moves (castling, en passant), and
+                  checkmate fundamentals.</span>
+              </li>
+              <li class="feature-item">
+                <span class="check-icon">&#10003;</span>
+                <span>Develop board vision, prevent 1-move blunders, and learn primary tactical motifs (forks, pins,
+                  skewers).</span>
+              </li>
+              <li class="feature-item">
+                <span class="check-icon">&#10003;</span>
+                <span>Build over-the-board concentration, tournament etiquette, sportsmanship, and confidence in
+                  decision-making.</span>
+              </li>
+            </ul>
+
+            <div>
+              <div style="margin-bottom: var(--space-md);">
+                <span class="badge badge-location">Online (Meet + Lichess) or Shah Alam</span>
               </div>
+
+              <a href="https://wa.me/60196120403?text=Hi%20Coach%20Iskandar%2C%20I%20am%20interested%20in%20the%20Beginner%20Foundation%20Chess%20Program%20for%20my%20child."
+                class="btn btn-whatsapp btn-block" target="_blank" rel="noopener noreferrer">
+                <svg class="wa-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path
+                    d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+                </svg>
+                <span>Inquire for Beginner</span>
+              </a>
             </div>
           </div>
+
+          <!-- Program 2: Intermediate Tactical & School Club (Featured) -->
+          <div class="program-card featured">
+            <span class="featured-badge">Most Popular</span>
+
+            <div class="program-card-header">
+              <span class="badge badge-gold">Stage 2</span>
+              <h3 class="program-title">Intermediate Tactical &amp; School Club</h3>
+              <p class="program-target"><strong>Target Level:</strong> Ages 7–17 &bull; School team players, club
+                players (Rating ~1000–1400)</p>
+            </div>
+
+            <ul class="feature-list">
+              <li class="feature-item">
+                <span class="check-icon">&#10003;</span>
+                <span>Deepen candidate move calculation, complex tactical combinations, and piece coordination in the
+                  middle game.</span>
+              </li>
+              <li class="feature-item">
+                <span class="check-icon">&#10003;</span>
+                <span>Master sound opening principles for White and Black, plus essential King &amp; Pawn and Rook
+                  endgames.</span>
+              </li>
+              <li class="feature-item">
+                <span class="check-icon">&#10003;</span>
+                <span>Structured post-game computer &amp; coach analysis to identify recurring weaknesses and master
+                  chess clocks.</span>
+              </li>
+            </ul>
+
+            <div>
+              <div style="margin-bottom: var(--space-md);">
+                <span class="badge badge-location">Online or Shah Alam Training Centre</span>
+              </div>
+
+              <a href="https://wa.me/60196120403?text=Hi%20Coach%20Iskandar%2C%20I%20am%20interested%20in%20the%20Intermediate%20Tactical%20%26%20School%20Club%20Program."
+                class="btn btn-whatsapp btn-block" target="_blank" rel="noopener noreferrer">
+                <svg class="wa-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path
+                    d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+                </svg>
+                <span>Inquire for Intermediate</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Program 3: Advanced MSSD/MSSM Tournament Prep -->
+          <div class="program-card">
+            <div class="program-card-header">
+              <span class="badge badge-green">Stage 3</span>
+              <h3 class="program-title">Advanced MSSD / MSSM Tournament Prep</h3>
+              <p class="program-target"><strong>Target Level:</strong> Ages 8–18 &bull; Tournament competitors &amp;
+                district contenders</p>
+            </div>
+
+            <ul class="feature-list">
+              <li class="feature-item">
+                <span class="check-icon">&#10003;</span>
+                <span>Build an individualized tournament opening repertoire tailored against standard competitive
+                  age-group setups.</span>
+              </li>
+              <li class="feature-item">
+                <span class="check-icon">&#10003;</span>
+                <span>Positional pawn structures, prophylaxis, strategic piece sacrifices, and technical endgame
+                  conversion.</span>
+              </li>
+              <li class="feature-item">
+                <span class="check-icon">&#10003;</span>
+                <span>Competitive psychological conditioning, Swiss-system pairing strategies, and classical game prep
+                  under clock pressure.</span>
+              </li>
+            </ul>
+
+            <div>
+              <div style="margin-bottom: var(--space-md);">
+                <span class="badge badge-location">Intensive Private &amp; Small Cohort</span>
+              </div>
+
+              <a href="https://wa.me/60196120403?text=Hi%20Coach%20Iskandar%2C%20I%20am%20interested%20in%20the%20Advanced%20MSSD%2FMSSM%20Tournament%20Prep%20Program."
+                class="btn btn-whatsapp btn-block" target="_blank" rel="noopener noreferrer">
+                <svg class="wa-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path
+                    d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+                </svg>
+                <span>Inquire for MSSD Prep</span>
+              </a>
+            </div>
+          </div>
+
         </div>
+
       </div>
-    </section><!-- End Contact Section -->
+    </section>
 
-  </main><!-- End #main -->
+    <!-- ==========================================================================
+         6. INTERACTIVE 3-STEP QUIZ SECTION
+         Exact classes: .quiz-step-bubble, .quiz-option, .quiz-pane, .quiz-result-view, .quiz-result-card
+         ========================================================================== -->
+    <section id="quiz" class="section section-stone">
+      <div class="container container-quiz">
 
-  <!-- ======= Footer ======= -->
-  <footer>
+        <div class="section-header text-center">
+          <span class="eyebrow">Pathway Diagnostic</span>
+          <h2 class="section-title">Which Chess Program Fits Your Child?</h2>
+          <p class="section-subtitle">
+            Answer 3 quick questions to discover the ideal coaching syllabus for your child's age, skill level, and
+            schedule.
+          </p>
+        </div>
+
+        <!-- Quiz Widget Container -->
+        <div class="quiz-widget" id="programQuizWidget">
+
+          <!-- Progress Tracker Header -->
+          <div class="quiz-progress-wrapper">
+            <div class="quiz-steps-nav">
+
+              <div class="quiz-step-indicator active" id="stepIndicator1">
+                <div class="quiz-step-bubble">1</div>
+                <div class="quiz-step-title">Age Group</div>
+              </div>
+
+              <div class="quiz-step-indicator" id="stepIndicator2">
+                <div class="quiz-step-bubble">2</div>
+                <div class="quiz-step-title">Experience</div>
+              </div>
+
+              <div class="quiz-step-indicator" id="stepIndicator3">
+                <div class="quiz-step-bubble">3</div>
+                <div class="quiz-step-title">Format</div>
+              </div>
+
+            </div>
+
+            <div class="quiz-progress-track">
+              <div class="quiz-progress-fill" id="quizProgressBar" style="width: 33.333%;"></div>
+            </div>
+          </div>
+
+          <!-- Step 1 Pane: Age -->
+          <div class="quiz-pane active" id="quizPane1" data-step="1">
+            <div class="quiz-question-meta">
+              <span class="quiz-question-counter">Question 1 of 3</span>
+              <span class="badge badge-outline">Step 1: Student Age</span>
+            </div>
+
+            <h3 class="quiz-question-title">How old is the prospective student?</h3>
+            <p class="quiz-question-desc">We structure cognitive concepts differently based on age and developmental
+              stage.</p>
+
+            <div class="quiz-options-group cols-2">
+
+              <div class="quiz-option" data-group="age" data-value="5-7">
+                <div class="quiz-option-radio" aria-hidden="true"></div>
+                <div class="quiz-option-body">
+                  <div class="quiz-option-title">5–7 Years Old</div>
+                  <div class="quiz-option-desc">Early learners &bull; Playful piece introduction, visual pattern
+                    recognition &amp; focus</div>
+                  <div class="quiz-option-tag">Junior Foundation</div>
+                </div>
+              </div>
+
+              <div class="quiz-option" data-group="age" data-value="8-12">
+                <div class="quiz-option-radio" aria-hidden="true"></div>
+                <div class="quiz-option-body">
+                  <div class="quiz-option-title">8–12 Years Old (Primary)</div>
+                  <div class="quiz-option-desc">Primary school students &bull; Fast absorption, ideal for school team
+                    &amp; MSSD entry</div>
+                  <div class="quiz-option-tag">Primary / MSSD U12</div>
+                </div>
+              </div>
+
+              <div class="quiz-option" data-group="age" data-value="13-17">
+                <div class="quiz-option-radio" aria-hidden="true"></div>
+                <div class="quiz-option-body">
+                  <div class="quiz-option-title">13–17 Years Old (Secondary)</div>
+                  <div class="quiz-option-desc">Secondary school students &bull; Deep tactical calculation, opening
+                    strategy &amp; MSSD U15/U18</div>
+                  <div class="quiz-option-tag">Secondary / MSSD U18</div>
+                </div>
+              </div>
+
+              <div class="quiz-option" data-group="age" data-value="18+">
+                <div class="quiz-option-radio" aria-hidden="true"></div>
+                <div class="quiz-option-body">
+                  <div class="quiz-option-title">Adult Learner (18+)</div>
+                  <div class="quiz-option-desc">Adults looking for structured study, rating gains, and strategic mental
+                    sharpening</div>
+                  <div class="quiz-option-tag">Adult Academy</div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="quiz-footer">
+              <button type="button" class="quiz-btn-prev" disabled aria-label="Previous Question">&larr; Back</button>
+              <button type="button" class="btn btn-primary quiz-btn-next" id="quizNextBtn1">Continue &rarr;</button>
+            </div>
+          </div>
+
+          <!-- Step 2 Pane: Experience -->
+          <div class="quiz-pane" id="quizPane2" data-step="2">
+            <div class="quiz-question-meta">
+              <span class="quiz-question-counter">Question 2 of 3</span>
+              <span class="badge badge-outline">Step 2: Skill Level</span>
+            </div>
+
+            <h3 class="quiz-question-title">What is their current chess experience?</h3>
+            <p class="quiz-question-desc">This ensures the student is placed with the right curriculum without feeling
+              lost or under-challenged.</p>
+
+            <div class="quiz-options-group cols-2">
+
+              <div class="quiz-option" data-group="experience" data-value="complete-beginner">
+                <div class="quiz-option-radio" aria-hidden="true"></div>
+                <div class="quiz-option-body">
+                  <div class="quiz-option-title">Complete Beginner (New to chess)</div>
+                  <div class="quiz-option-desc">Has never played chess before, or wants to learn piece movement from
+                    scratch</div>
+                </div>
+              </div>
+
+              <div class="quiz-option" data-group="experience" data-value="knows-basic-moves">
+                <div class="quiz-option-radio" aria-hidden="true"></div>
+                <div class="quiz-option-body">
+                  <div class="quiz-option-title">Knows Basic Piece Moves</div>
+                  <div class="quiz-option-desc">Understands how pieces move, plays casual games with friends or family
+                    at home</div>
+                </div>
+              </div>
+
+              <div class="quiz-option" data-group="experience" data-value="school-club">
+                <div class="quiz-option-radio" aria-hidden="true"></div>
+                <div class="quiz-option-body">
+                  <div class="quiz-option-title">Plays School / Club Games</div>
+                  <div class="quiz-option-desc">Plays in school chess club or online (Chess.com/Lichess), knows basic
+                    forks and pins</div>
+                </div>
+              </div>
+
+              <div class="quiz-option" data-group="experience" data-value="competitive">
+                <div class="quiz-option-radio" aria-hidden="true"></div>
+                <div class="quiz-option-body">
+                  <div class="quiz-option-title">Competitive (MSSD / Rated Tournaments)</div>
+                  <div class="quiz-option-desc">Has played in MSSD, MSSS, national open, or FIDE-rated events; aims for
+                    podium finishes</div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="quiz-footer">
+              <button type="button" class="quiz-btn-prev" id="quizBackBtn2">&larr; Back</button>
+              <button type="button" class="btn btn-primary quiz-btn-next" id="quizNextBtn2">Continue &rarr;</button>
+            </div>
+          </div>
+
+          <!-- Step 3 Pane: Format -->
+          <div class="quiz-pane" id="quizPane3" data-step="3">
+            <div class="quiz-question-meta">
+              <span class="quiz-question-counter">Question 3 of 3</span>
+              <span class="badge badge-outline">Step 3: Training Format</span>
+            </div>
+
+            <h3 class="quiz-question-title">Which learning format do you prefer?</h3>
+            <p class="quiz-question-desc">We offer flexible training in Shah Alam or online across Malaysia via live
+              interactive screen sessions.</p>
+
+            <div class="quiz-options-group">
+
+              <div class="quiz-option" data-group="format" data-value="online">
+                <div class="quiz-option-radio" aria-hidden="true"></div>
+                <div class="quiz-option-body">
+                  <div class="quiz-option-title">Online (Zoom/Meet + Lichess)</div>
+                  <div class="quiz-option-desc">Live interactive study boards, screen-share analysis, puzzle solving
+                    from home with zero commute</div>
+                </div>
+              </div>
+
+              <div class="quiz-option" data-group="format" data-value="physical">
+                <div class="quiz-option-radio" aria-hidden="true"></div>
+                <div class="quiz-option-body">
+                  <div class="quiz-option-title">Physical (Shah Alam / Klang Valley)</div>
+                  <div class="quiz-option-desc">In-person training at Pawn Playground Centre in Shah Alam with real
+                    tournament chess sets and clocks</div>
+                </div>
+              </div>
+
+              <div class="quiz-option" data-group="format" data-value="both">
+                <div class="quiz-option-radio" aria-hidden="true"></div>
+                <div class="quiz-option-body">
+                  <div class="quiz-option-title">Both / Flexible</div>
+                  <div class="quiz-option-desc">Open to whichever format best aligns with coach availability and student
+                    goals</div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="quiz-footer">
+              <button type="button" class="quiz-btn-prev" id="quizBackBtn3">&larr; Back</button>
+              <button type="button" class="btn btn-accent quiz-btn-next" id="quizSubmitBtn">Get My Recommendation
+                &rarr;</button>
+            </div>
+          </div>
+
+          <!-- Step 4 Result View: Diagnostic Recommendation (No Prices Displayed) -->
+          <div class="quiz-result-view" id="quizResultView">
+
+            <div class="quiz-result-badge">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                </polygon>
+              </svg>
+              <span>Recommended Coaching Pathway</span>
+            </div>
+
+            <div class="quiz-result-card">
+              <h3 class="quiz-result-program-title" id="quizResultProgramTitle">
+                Beginner Foundation Chess Program
+              </h3>
+
+              <p class="quiz-result-summary" id="quizResultSummary">
+                Based on your child's age and experience, we recommend starting with our structured foundational
+                syllabus to build rock-solid piece mechanics, board vision, and blunders prevention.
+              </p>
+
+              <div class="quiz-result-meta-grid">
+                <div class="quiz-result-meta-item">
+                  <span class="label">Matched Age Group</span>
+                  <span class="value" id="quizResultAge">8–12 Years Old (Primary)</span>
+                </div>
+                <div class="quiz-result-meta-item">
+                  <span class="label">Experience Level</span>
+                  <span class="value" id="quizResultExperience">Knows Basic Piece Moves</span>
+                </div>
+                <div class="quiz-result-meta-item">
+                  <span class="label">Preferred Format</span>
+                  <span class="value" id="quizResultFormat">Physical (Shah Alam)</span>
+                </div>
+                <div class="quiz-result-meta-item">
+                  <span class="label">Class Size Recommendation</span>
+                  <span class="value">Private (1–2) or Small Group (Max 5)</span>
+                </div>
+              </div>
+
+              <div style="margin-top: var(--space-md);">
+                <h4 style="font-size: 1.05rem; margin-bottom: var(--space-xs);">3 Key Syllabus Highlights for this
+                  Stage:</h4>
+                <ul class="feature-list" style="margin: 0;" id="quizResultHighlights">
+                  <li class="feature-item">
+                    <span class="check-icon">&#10003;</span>
+                    <span>Systematic tactical motifs: forks, pins, skewers, and discovering checkmates</span>
+                  </li>
+                  <li class="feature-item">
+                    <span class="check-icon">&#10003;</span>
+                    <span>Opening discipline: controlling the center, developing pieces, castling safely</span>
+                  </li>
+                  <li class="feature-item">
+                    <span class="check-icon">&#10003;</span>
+                    <span>Post-game reviews to reinforce decision habits and build tournament confidence</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Pre-Filled WhatsApp Conversion Card -->
+            <div class="quiz-whatsapp-card">
+              <h4>Ready to Take the Next Step with Coach Iskandar?</h4>
+              <p>
+                Click below to send your assessment result directly to Coach Iskandar on WhatsApp.
+                We will reply with suitable class timeslots and schedule your introductory trial session.
+              </p>
+
+              <a href="https://wa.me/60196120403?text=Hi%20Coach%20Iskandar%2C%20I%20completed%20the%20Pawn%20Playground%20quiz%20and%20would%20like%20to%20discuss%20the%20recommended%20chess%20program%20for%20my%20child."
+                class="btn btn-whatsapp-bright btn-lg btn-block" id="quizWhatsAppCta" target="_blank"
+                rel="noopener noreferrer">
+                <svg class="wa-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path
+                    d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+                </svg>
+                <span>Send My Assessment to Coach Iskandar via WhatsApp</span>
+              </a>
+
+              <div>
+                <button type="button" class="quiz-restart-link" id="quizRestartBtn">&larr; Retake Quiz or Change
+                  Selections</button>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         7. CHESS COMMUNITY & RESOURCE LINKS (PRESERVING EXISTING BLOG/FIDE/MCF LINKS)
+         ========================================================================== -->
+    <section class="section">
+      <div class="container">
+
+        <div class="section-header text-center">
+          <span class="eyebrow">Chess Community</span>
+          <h2 class="section-title">Resources &amp; Chess Links</h2>
+          <p class="section-subtitle">
+            Stay connected with local Malaysian tournament news and international master games.
+          </p>
+        </div>
+
+        <div class="grid-3">
+
+          <div class="card">
+            <span class="badge badge-outline" style="margin-bottom: var(--space-xs);">Local Circuit</span>
+            <h3 style="font-size: 1.25rem; margin-bottom: var(--space-xs);">
+              <a href="https://malaysiachess.org/" target="_blank" rel="noopener noreferrer">
+                Malaysian Chess Federation (MCF) &rarr;
+              </a>
+            </h3>
+            <p>
+              Official news, tournament calendars, national ratings, and coverage across Malaysian schools and state
+              circuits.
+            </p>
+          </div>
+
+          <div class="card">
+            <span class="badge badge-outline" style="margin-bottom: var(--space-xs);">Global Authority</span>
+            <h3 style="font-size: 1.25rem; margin-bottom: var(--space-xs);">
+              <a href="https://www.fide.com/news" target="_blank" rel="noopener noreferrer">
+                International Chess Federation (FIDE) &rarr;
+              </a>
+            </h3>
+            <p>
+              World championship broadcasts, FIDE ratings, official tournament regulations, and global chess news.
+            </p>
+          </div>
+
+          <div class="card">
+            <span class="badge badge-outline" style="margin-bottom: var(--space-xs);">Online Learning</span>
+            <h3 style="font-size: 1.25rem; margin-bottom: var(--space-xs);">
+              <a href="https://www.chess.com/blog/chesscom" target="_blank" rel="noopener noreferrer">
+                Chess.com Master Articles &rarr;
+              </a>
+            </h3>
+            <p>
+              Tactical articles, grandmaster game recaps, and interactive puzzle trainers for continuous practice
+              between lessons.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         8. CONTACT & LOCATION SECTION (SHAH ALAM, SELANGOR)
+         ========================================================================== -->
+    <section id="contact" class="section section-stone">
+      <div class="container">
+
+        <div class="grid-2 items-center">
+
+          <div>
+            <span class="eyebrow">Get in Touch</span>
+            <h2 class="text-h2" style="margin-bottom: var(--space-sm);">
+              Start Your Chess Journey with Pawn Playground
+            </h2>
+
+            <p class="lead" style="margin-bottom: var(--space-md);">
+              Whether you are looking for foundational coaching for your child, preparing for the upcoming MSSD district
+              championship, or seeking adult chess training, we are here to support your goals.
+            </p>
+
+            <ul class="feature-list" style="margin-bottom: var(--space-xl);">
+              <li class="feature-item">
+                <svg class="check-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span><strong>Location:</strong> Pawn Playground Training Centre, Shah Alam, Selangor, Malaysia</span>
+              </li>
+              <li class="feature-item">
+                <svg class="check-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                  </path>
+                </svg>
+                <span><strong>Phone / WhatsApp:</strong> (+60) 19-612 0403</span>
+              </li>
+              <li class="feature-item">
+                <svg class="check-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                <span><strong>Email:</strong> iskandarhkimi43@gmail.com</span>
+              </li>
+              <li class="feature-item">
+                <svg class="check-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+                <span><strong>Instagram:</strong> <a href="https://www.instagram.com/pawnplayground/" target="_blank"
+                    rel="noopener noreferrer">@pawnplayground</a></span>
+              </li>
+            </ul>
+
+            <a href="https://wa.me/60196120403?text=Hi%20Coach%20Iskandar%2C%20I%20would%20like%20to%20inquire%20about%20Pawn%20Playground%20chess%20classes%20in%20Shah%20Alam."
+              class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener noreferrer">
+              <svg class="wa-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path
+                  d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+              </svg>
+              <span>Message Coach Iskandar on WhatsApp</span>
+            </a>
+          </div>
+
+          <!-- Academy Photo / Brand Card -->
+          <div class="card" style="text-align: center; padding: var(--space-2xl);">
+            <div style="margin-bottom: var(--space-md);">
+              <img src="assets/img/V2 Logo (2).png" alt="Pawn Playground Academy Emblem"
+                style="max-width: 200px; margin: 0 auto;" width="200" height="200">
+            </div>
+            <h3 style="font-size: 1.5rem; margin-bottom: var(--space-2xs);">Pawn Playground Chess Academy</h3>
+            <p class="text-gold"
+              style="font-weight: 700; font-family: var(--font-heading); margin-bottom: var(--space-sm);">#PawnToPlay
+              &bull; Entertain. Inspire. Educate.</p>
+            <p style="font-size: 0.92rem; color: var(--text-muted); margin-bottom: var(--space-md);">
+              Premier destination for young chess players in Shah Alam and across Selangor. Private coaching, group
+              sessions, and MSSD tournament guidance.
+            </p>
+            <span class="badge badge-location">Shah Alam, Selangor, Malaysia</span>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================================
+       9. CLEAN EDITORIAL FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
     <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="copyright-box">
-            <p class="copyright">&copy; Copyright <strong>DevFolio</strong>. All Rights Reserved</p>
-            <div class="credits">
-              <!--
-              All the links in the footer should remain intact.
-              You can delete the links only if you purchased the pro version.
-              Licensing information: https://bootstrapmade.com/license/
-              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=DevFolio
-            -->
-              Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-            </div>
-          </div>
+
+      <div class="grid-4" style="gap: var(--space-xl); margin-bottom: var(--space-2xl);">
+
+        <div>
+          <a href="index.html" class="brand-logo" style="margin-bottom: var(--space-sm);"
+            aria-label="Pawn Playground Home">
+            <span class="logo-icon">
+              <img src="assets/img/pawn-icon-tight.png" alt="Pawn Playground Icon" width="36" height="36">
+            </span>
+            <span class="brand-wordmark">
+              <span class="brand-pawn" style="color: #FFFFFF;">PAWN</span>
+              <span class="brand-playground" style="color: rgba(255, 255, 255, 0.65);">PLAYGROUND.</span>
+            </span>
+          </a>
+          <p style="font-size: 0.9rem; line-height: 1.6;">
+            Dedicated chess academy in Shah Alam, Selangor. Nurturing young minds through the art of calculation,
+            sportsmanship, and strategic vision.
+          </p>
+        </div>
+
+        <div>
+          <h4 style="margin-bottom: var(--space-md); font-size: 1.05rem;">Programs</h4>
+          <ul style="display: flex; flex-direction: column; gap: var(--space-xs); font-size: 0.9rem;">
+            <li><a href="#programs">Beginner Foundation</a></li>
+            <li><a href="#programs">Intermediate Tactical &amp; School Club</a></li>
+            <li><a href="#programs">Advanced MSSD / MSSM Prep</a></li>
+            <li><a href="#quiz">Find Your Program Quiz</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 style="margin-bottom: var(--space-md); font-size: 1.05rem;">Quick Links</h4>
+          <ul style="display: flex; flex-direction: column; gap: var(--space-xs); font-size: 0.9rem;">
+            <li><a href="#about">About Coach Iskandar</a></li>
+            <li><a href="#coaches">Academy Trainers</a></li>
+            <li><a href="#philosophy">Training Methodology</a></li>
+            <li><a href="https://www.instagram.com/pawnplayground/" target="_blank" rel="noopener noreferrer">Instagram
+                (@pawnplayground)</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 style="margin-bottom: var(--space-md); font-size: 1.05rem;">Direct WhatsApp Inquiries</h4>
+          <p style="font-size: 0.88rem; margin-bottom: var(--space-md);">
+            Have questions about student age, class timeslots, or private lessons? Message Coach Iskandar directly.
+          </p>
+          <a href="https://wa.me/60196120403?text=Hi%20Coach%20Iskandar%2C%20I%20would%20like%20to%20inquire%20about%20chess%20coaching."
+            class="btn btn-whatsapp btn-block" target="_blank" rel="noopener noreferrer">
+            <svg class="wa-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path
+                d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+            </svg>
+            <span>WhatsApp: 019-612 0403</span>
+          </a>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Pawn Playground Chess Academy. All Rights Reserved. Shah Alam, Selangor, Malaysia.
+        </div>
+        <div>
+          Crafted with editorial tournament standards &bull; #PawnToPlay
         </div>
       </div>
+
     </div>
-  </footer><!-- End  Footer -->
+  </footer>
 
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
-  <script>
-    function myFunction() {
-      var dots = document.getElementById("dots");
-      var moreText = document.getElementById("more");
-      var btnText = document.getElementById("myBtn");
-    
-      if (dots.style.display === "none") {
-        dots.style.display = "inline";
-        btnText.innerHTML = "Read more"; 
-        moreText.style.display = "none";
-      } else {
-        dots.style.display = "none";
-        btnText.innerHTML = "Read less"; 
-        moreText.style.display = "inline";
-      }
-    }
-    </script>
-
+  <!-- Main Vanilla JS Script -->
+  <script src="js/main.js"></script>
 </body>
 
 </html>
